@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Freqtrade runtime data
+user_data/*/logs/
+user_data/*/*.sqlite
+user_data/*/*.sqlite-journal
+user_data/*/backtest_results/
+user_data/*/plot/
+user_data/*/hyperopt_results/
+
+# Sensitive Configuration
+# Ignore all json configs in strategy folders as they may contain keys
+user_data/*/*.json
+
+# Allow example configs if strictly named
+!user_data/*/*.example.json
+!user_data/*/sample_config.json
+
+# IDE settings
+.idea/
+.vscode/
+*.swp
+*.swo
+
+freqtrade_example
